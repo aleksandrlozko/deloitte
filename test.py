@@ -62,11 +62,18 @@ for i in df.rejected_function:
     df.rejected_function[k] = ','.join(i)
     k+=1
 
-accepted_function_uniq = uniq(df.accepted_function)
-rejected_function_uniq = uniq(df.rejected_function)
-print(accepted_function_uniq, rejected_function_uniq)
-print(len(accepted_function_uniq), len(rejected_function_uniq))
+# accepted_function_uniq = uniq(df.accepted_function)
+# rejected_function_uniq = uniq(df.rejected_function)
+# print(accepted_function_uniq, rejected_function_uniq)
+# print(len(accepted_function_uniq), len(rejected_function_uniq))
 
 # print(df.accepted_function)
 # print(df.rejected_function)
 
+
+k=0
+for x in df.accepted_function:
+    for y in x:
+        df['{}'.format(y)][k] = 1
+    k+=1
+print(df.columns)
