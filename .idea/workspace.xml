@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4658876a-b15b-42c2-9f2a-6d12c6f1e544" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TextCleaner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TextPreparer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classificators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keywords.py" beforeDir="false" afterPath="$PROJECT_DIR$/keywords.py" afterDir="false" />
+    <list default="true" id="47c06c42-9280-4dd3-8607-b70684040af3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_df.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_df.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deloitte.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deloitte.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,38 +24,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="ProjectId" id="1a5DN2luSWHOqAFlscAXf1dxVry" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.classificators">
-    <configuration name="classificators" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="bad" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="deloitte" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,29 +52,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classificators.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="keywords" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="deloitte" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keywords.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bad.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,9 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.classificators" />
-        <item itemvalue="Python.keywords" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.bad" />
       </list>
     </recent_temporary>
   </component>
@@ -131,123 +94,36 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="4658876a-b15b-42c2-9f2a-6d12c6f1e544" name="Default Changelist" comment="" />
-      <created>1586016517317</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1586016517317</updated>
-      <workItem from="1586016518603" duration="6857000" />
-    </task>
-    <task id="LOCAL-00001" summary="1">
-      <created>1586016597672</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1586016597672</updated>
-    </task>
-    <task id="LOCAL-00002" summary="2">
-      <created>1586016797436</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1586016797436</updated>
-    </task>
-    <task id="LOCAL-00003" summary="2">
-      <created>1586017128962</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1586017128962</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="roots">
-                    <value>
-                      <list>
-                        <option value="$PROJECT_DIR$" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="1" />
-    <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="254" y="52" key="CommitChangelistDialog2" timestamp="1586017128824">
+    <state x="415" y="64" key="#test" timestamp="1586018840758">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="254" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586017128824" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1586026323792">
+    <state x="415" y="64" key="#test/0.0.1440.900@0.0.1440.900" timestamp="1586018840758" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1586025451862">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586026323792" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1586026323791">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586025451862" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1586025451859">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586026323791" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1586026323790">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586025451859" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1586025451858">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586026323790" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1586026323791">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586025451858" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1586025451862">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586026323791" />
-    <state x="427" y="167" key="RollbackChangesDialog" timestamp="1586017061045">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586025451862" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1586018923840">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="427" y="167" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1586017061045" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1586016734754">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586016734754" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1586017132975">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586017132975" />
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586026649200">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1586026649200" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586018923840" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/deloitte$test.coverage" NAME="test Coverage Results" MODIFIED="1586017717431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deloitte$classificators.coverage" NAME="classificators Coverage Results" MODIFIED="1586026323770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deloitte$keywords.coverage" NAME="keywords Coverage Results" MODIFIED="1586022714968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deloitte$test.coverage" NAME="test Coverage Results" MODIFIED="1586025451849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deloitte$bad.coverage" NAME="bad Coverage Results" MODIFIED="1586022545636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
