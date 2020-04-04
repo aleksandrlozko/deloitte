@@ -98,30 +98,16 @@ class PrepareText:
             if n not in total_uniq:
                 total_uniq.append(n)
 
-        # total_uniq.remove('accounting')
-        # total_uniq.remove('bookeeping')
-        # total_uniq.remove('auditing')
 
         data_size = len(df.id)
         test_size = int(data_size - round(data_size * train_test_split))
 
-        y_train = df.target[test_size:]
+        y_train = df.target[test_size+1:]
         y_test = df.target[:test_size]
 
-        l = 12411
-
-        spisok_train = list()
-        for x in total_uniq:
-            print(df[str(x)])
-            print(df[str(x)].tolist())
-            spisok_train.append(df[str(x)].tolist()[:l])
-
-        spisok_test = list()
-        for x in total_uniq:
-            spisok_test.append(df[str(x)].tolist()[l:-1])
 
 
-        return spisok_train, y_train, spisok_test, y_test, total_uniq
+        return y_train, y_test
 
     @staticmethod
     def transform_sets(vocab_size, descriptions, X_train, X_test, y_train, y_test, maxSequenceLength, num_classes):
