@@ -122,7 +122,20 @@ def function(df):
     for x in total_uniq:
         spisok_test.append(df[str(x)].tolist()[l:-1])
 
-    return spisok_test, spisok_train, total_uniq
+    b=0
+    spisok_train1 = list()
+    for x in spisok_train:
+        spisok_train1.append(x[b])
+        b+=1
+
+    b = 0
+    spisok_test1 = list()
+    for x in spisok_test:
+        spisok_test1.append(x[b])
+        b += 1
+
+
+    return spisok_test1, spisok_train1, total_uniq
 # df_train = pd.DataFrame(spisok, columns=total_uniq)
 # print(accepted_function_uniq, rejected_function_uniq)
 
