@@ -1,9 +1,10 @@
 import numpy as np
+import pandas as pd
 from keras.preprocessing import sequence
 from keras.preprocessing.text import Tokenizer
 from tensorflow import keras
 from sklearn.preprocessing import LabelEncoder
-
+from test import uniq
 
 class PrepareText:
     """
@@ -78,24 +79,49 @@ class PrepareText:
         :param train_test_split: Training set size
         :return: Data divided into training and test
         """
+        accepted_function_uniq = uniq(df.accepted_function)
+        rejected_function_uniq = uniq(df.rejected_function)
+        accepted_product_uniq = uniq(df.accepted_product)
+        rejected_product_uniq = uniq(df.rejected_product)
+
+        total_uniq = list()
+        for n in accepted_function_uniq:
+            if n not in total_uniq:
+                total_uniq.append(n)
+        for n in rejected_function_uniq:
+            if n not in total_uniq:
+                total_uniq.append(n)
+        for n in accepted_product_uniq:
+            if n not in total_uniq:
+                total_uniq.append(n)
+        for n in rejected_product_uniq:
+            if n not in total_uniq:
+                total_uniq.append(n)
+
+        # total_uniq.remove('accounting')
+        # total_uniq.remove('bookeeping')
+        # total_uniq.remove('auditing')
 
         data_size = len(df.id)
         test_size = int(data_size - round(data_size * train_test_split))
-        print("Test size: {}".format(test_size))
 
-        print("\nTraining set:")
-        x_train = descriptions[test_size:]
-        print("\t - x_train: {}".format(len(x_train)))
         y_train = df.target[test_size:]
-        print("\t - y_train: {}".format(len(y_train)))
-
-        print("\nTesting set:")
-        x_test = descriptions[:test_size]
-        print("\t - x_test: {}".format(len(x_test)))
         y_test = df.target[:test_size]
-        print("\t - y_test: {}".format(len(y_test)))
 
-        return x_train, y_train, x_test, y_test
+        l = 12411
+
+        spisok_train = list()
+        for x in total_uniq:
+            print(df[str(x)])
+            print(df[str(x)].tolist())
+            spisok_train.append(df[str(x)].tolist()[:l])
+
+        spisok_test = list()
+        for x in total_uniq:
+            spisok_test.append(df[str(x)].tolist()[l:-1])
+
+
+        return spisok_train, y_train, spisok_test, y_test, total_uniq
 
     @staticmethod
     def transform_sets(vocab_size, descriptions, X_train, X_test, y_train, y_test, maxSequenceLength, num_classes):
