@@ -46,41 +46,55 @@ def function(df):
     lenn3, union3 = uniq_two(df.accepted_function, df.rejected_product)
 
 
-    k=0
-    for i in df.accepted_function:
-        i = i.lower().strip().split(',')
-        for h in i:
-            if h in union or h in union3:
-                i.remove(h)
-        df.accepted_function[k] = ','.join(i)
-        k+=1
+    p=0
+    for x in df['keywords']:
+        if x == []:
+            df.drop(df[(df.index == p)].index, inplace=True)
+        p+=1
 
-    k=0
-    for i in df.rejected_function:
-        i = i.lower().strip().split(',')
-        for h in i:
-            if h in union or h in union2:
-                i.remove(h)
-        df.rejected_function[k] = ','.join(i)
-        k+=1
+    p = 0
+    for x in df['accepted_function']:
+        if x == '_nan_':
+            df.drop(df[(df.index == p)].index, inplace=True)
+        p += 1
 
-    k=0
-    for i in df.accepted_product:
-        i = i.lower().strip().split(',')
-        for h in i:
-            if h in union1 or h in union2:
-                i.remove(h)
-        df.accepted_product[k] = ','.join(i)
-        k+=1
+    print(len(df))
 
-    k=0
-    for i in df.rejected_product:
-        i = i.lower().strip().split(',')
-        for h in i:
-            if h in union1 or h in union3:
-                i.remove(h)
-        df.rejected_product[k] = ','.join(i)
-        k+=1
+            # k=0
+    # for i in df.accepted_function:
+    #     i = i.lower().strip().split(',')
+    #     for h in i:
+    #         if h in union or h in union3:
+    #             i.remove(h)
+    #     df.accepted_function[k] = ','.join(i)
+    #     k+=1
+    #
+    # k=0
+    # for i in df.rejected_function:
+    #     i = i.lower().strip().split(',')
+    #     for h in i:
+    #         if h in union or h in union2:
+    #             i.remove(h)
+    #     df.rejected_function[k] = ','.join(i)
+    #     k+=1
+    #
+    # k=0
+    # for i in df.accepted_product:
+    #     i = i.lower().strip().split(',')
+    #     for h in i:
+    #         if h in union1 or h in union2:
+    #             i.remove(h)
+    #     df.accepted_product[k] = ','.join(i)
+    #     k+=1
+    #
+    # k=0
+    # for i in df.rejected_product:
+    #     i = i.lower().strip().split(',')
+    #     for h in i:
+    #         if h in union1 or h in union3:
+    #             i.remove(h)
+    #     df.rejected_product[k] = ','.join(i)
+    #     k+=1
 
     accepted_function_uniq = uniq(df.accepted_function)
     rejected_function_uniq = uniq(df.rejected_function)
@@ -112,7 +126,7 @@ def function(df):
             df[str(el)][m] = 1
         m += 1
 
-    l = 12411
+    l = 11436
 
     spisok_train = list()
     for x in total_uniq:
@@ -120,22 +134,31 @@ def function(df):
 
     spisok_test = list()
     for x in total_uniq:
-        spisok_test.append(df[str(x)].tolist()[l:-1])
+        spisok_test.append(df[str(x)].tolist()[l:13500])
 
-    b=0
-    spisok_train1 = list()
-    for x in spisok_train:
-        spisok_train1.append(x[b])
-        b+=1
+# spisok_train2 = list()
+    # for z in range(11436):
+    #     b=0
+    #     spisok_train1 = list()
+    #     for x in spisok_train:
+    #        spisok_train1.append(x[b])
+    #        b+=1
+    #     spisok_train2.append(spisok_train1)
+    #
+    # spisok_test2 = list()
+    # for z in range(2859):
+    #     b=0
+    #     spisok_test1 = list()
+    #     for x in spisok_test:
+    #        spisok_test1.append(x[b])
+    #        b+=1
+    #     spisok_test2.append(spisok_test1)
 
-    b = 0
-    spisok_test1 = list()
-    for x in spisok_test:
-        spisok_test1.append(x[b])
-        b += 1
 
+    return spisok_test, spisok_train, total_uniq
 
-    return spisok_test1, spisok_train1, total_uniq
+function(df)
+
 # df_train = pd.DataFrame(spisok, columns=total_uniq)
 # print(accepted_function_uniq, rejected_function_uniq)
 

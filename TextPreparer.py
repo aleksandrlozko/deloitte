@@ -102,7 +102,7 @@ class PrepareText:
         data_size = len(df.id)
         test_size = int(data_size - round(data_size * train_test_split))
 
-        y_train = df.target[test_size+1:]
+        y_train = df.target[test_size:]
         y_test = df.target[:test_size]
 
 
