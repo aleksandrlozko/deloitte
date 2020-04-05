@@ -18,6 +18,7 @@ df = pd.read_pickle('train_df.pkl')
 def uniq(category):
     category_one = list()
 
+
     for x in category:
         for y in x.split(','):
             category_one.append(y.strip().lower())
