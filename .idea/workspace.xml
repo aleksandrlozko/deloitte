@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0cc91c1-9b95-4b03-a628-1dff81656bfb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/111.py" beforeDir="false" afterPath="$PROJECT_DIR$/111.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classificators.py" beforeDir="false" afterPath="$PROJECT_DIR$/classificators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,8 +144,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.classificators" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.111" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.keywords" />
       </list>
     </recent_temporary>
@@ -159,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586016517317</updated>
       <workItem from="1586016518603" duration="6857000" />
-      <workItem from="1586087007281" duration="337000" />
+      <workItem from="1586087007281" duration="7975000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1586016597672</created>
@@ -203,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586087018075</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="7">
+      <created>1586087861726</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586087861726</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,26 +263,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="7" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="254" y="52" key="CommitChangelistDialog2" timestamp="1586087017918">
+    <state x="254" y="52" key="CommitChangelistDialog2" timestamp="1586087861572">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="254" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586087017918" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1586079754648">
+    <state x="254" y="52" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586087861572" />
+    <state width="1398" height="260" key="GridCell.Tab.0.bottom" timestamp="1586098914451">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586079754648" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1586079754646">
+    <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586098914451" />
+    <state width="1398" height="260" key="GridCell.Tab.0.center" timestamp="1586098914450">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586079754646" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1586079754646">
+    <state width="1398" height="260" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586098914450" />
+    <state width="1398" height="260" key="GridCell.Tab.0.left" timestamp="1586098914449">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586079754646" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1586079754647">
+    <state width="1398" height="260" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586098914449" />
+    <state width="1398" height="260" key="GridCell.Tab.0.right" timestamp="1586098914450">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586079754647" />
+    <state width="1398" height="260" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586098914450" />
     <state x="427" y="167" key="RollbackChangesDialog" timestamp="1586017061045">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -286,23 +295,23 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="474" y="173" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1586026685004" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1586087850232">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1586087865110">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586087850232" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586087865110" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586072112411">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1586072112411" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1586077741543">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1586096079155">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1586077741543" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1586096079155" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/deloitte$bad.coverage" NAME="bad Coverage Results" MODIFIED="1586026755357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/deloitte$test.coverage" NAME="test Coverage Results" MODIFIED="1586075108472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deloitte$classificators.coverage" NAME="classificators Coverage Results" MODIFIED="1586079272724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/deloitte$111.coverage" NAME="111 Coverage Results" MODIFIED="1586070330868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deloitte$classificators.coverage" NAME="classificators Coverage Results" MODIFIED="1586098914439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/deloitte$111.coverage" NAME="111 Coverage Results" MODIFIED="1586088418487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
